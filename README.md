@@ -39,8 +39,8 @@ Each review was given tags based on its contents. All text was converted to lowe
 
 The baseline approach uses a rule-based keyword search.
 
-* How it works: It goes through the text and gives it tags based on specific trigger words (i.e. "crash" > "Bug Report", "wish" > "Feature Request")
-* Why it is Naive: It classifies text strictly based on the trigger word, and does not care about context. It therefore cannot handle negation or any implied intentions. ("No bugs" > "Bug Report" even if it is not. "Fell through the floor" does not get caught as a "Bug Report" even if it is.)
+* How does it work? It goes through the text and gives it tags based on specific trigger words (i.e. "crash" becomes "Bug Report", "wish" becomes "Feature Request")
+* How is it Naive? It classifies text strictly based on the trigger word, and does not care about context. It therefore cannot handle negation or any implied intentions. ("No bugs" becomes "Bug Report" even if it is not. "Fell through the floor" does not get caught as a "Bug Report" even if it is.)
 
 #### AI Pipeline
 In order to overcome the limitations with simply keyword matching, I implemented a Zero-Shot classification pipeline using the Hugging Face `transformers` library. This approach ensures that reviews can be classified with context in mind, going from simple pattern matching to a natural language inference task. 
