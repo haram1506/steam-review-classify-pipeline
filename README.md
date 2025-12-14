@@ -32,7 +32,7 @@ The current game I am developing is similar in style to the indie roguelike game
 One small, customized dataset was used to maximize variety of test cases. 
 
 #### Preprocessing: 
-Each review was given tags based on its contents. All text was converted to lowercase, and non-text elements were removed. 
+Each review was given tags based on its contents.
 
 ### 3. Methodology
 #### Naive Baseline
