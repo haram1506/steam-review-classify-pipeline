@@ -60,7 +60,7 @@ The AI pipeline was compared to the Naive baseline using precision, recall, and 
 | **Recall (Weighted)** | 0.54 | **0.58** | +4% |
 | **F1-Score (Weighted)** | 0.59 | **0.67** | +8% |
 
-The AI Pipeline shows a significant improvement in *precision* (0.81 vs. 0.69) which indicates taht when the AI applied a tag, it was much more likely to be correct compared to the Naive baseline, which frequently applied tags incorrectly due to the strict keyword triggers. The Recall improvement was minimal, mainly because the AI was conservative and sometimes returned no tags for reviews that tended to be more shorter or ambiguous. 
+The AI Pipeline shows a significant improvement in *precision* (0.81 vs. 0.69) which indicates that when the AI applied a tag, it was much more likely to be correct compared to the Naive baseline, which frequently applied tags incorrectly due to the strict keyword triggers. The Recall improvement was minimal, mainly because the AI was conservative and sometimes returned no tags for reviews that tended to be more shorter or ambiguous. 
 
 The following examples highlight where the AI Piepline's semantic and contextual understanding allowed it to outperform the strict logic of the baseline, but also its limitations. 
 
